@@ -1,0 +1,120 @@
+/* General Rules Begin */
+
+* { margin: 0; padding: 0; }
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #FFF;
+  background-size: cover;
+}
+
+.homepage {
+  align-content: center;
+  margin: auto;
+  max-width: 100px;
+  max-height: auto;
+}
+
+.page_title {
+  position: relative;
+  font-weight: 500;
+  font-size: 10.7em;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.cart_btn {
+  float: right;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.contact {
+  padding-top: 60px;
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_info {
+  padding-top: 10px;
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+}
+
+.rights {
+  text-align: right;
+  font-size: 10px;
+  font-family: 'Helvetica';
+  padding: 10px;
+  padding-right: 20px;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+  ul.topnav li a:hover {background-color: #111;}
+
+  ul.topnav li.icon {display: none;}
+
+/* General Rules End */
+
+/* Mobile Screen Size Begin */
+@media only screen and (max-width: 480px) {
+
+.page_title {
+  font-weight: 400;
+  font-size: 6em;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+ul.topnav li:not(:first-child) {display: none;}
+
+ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+}
+
+ul.topnav.responsive {position: relative;}
+
+ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+ul.topnav.responsive li {
+    float: none;
+    display: inline;
+}
+
+ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+}
+
+/* Mobile Screen Size End */
